@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    --background-color: linear-gradient(45deg, #ffa8ff, #359b78,  #f8dd77);
+    --radius: 10px;
+    font-family: "Indie Flower";
+}
+
+body {
+    height: 100dvh;
+    background-image: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base {
+    background-color: #ffffff21;
+    min-height: 100px;
+    width: 500px;
+    border-radius: var(--radius);
+    color: #fff;
+    padding: 2rem;
+    box-shadow: 0 15px 40px -20px black;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.introduce {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    background-color: #f4f4f425;
+
+}
+
+.introduce::placeholder {
+    color: #ffffff70;
+}
+
+.everything, .undone, .done {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.todo_item {
+    background-color: #f4f4f4db;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.todo_item span {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.todo_item input[type=checkbox] {
+    width: 20px ;
+    height: 20px;
+    accent-color: lime;
+}
+
+.todo_item a {
+    color: #555555;
+}
+
+.done .todo_item {
+    background-color: #74c674;
+    text-decoration: line-through;
+}
+
+.done_title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    color: #fff;
+}
